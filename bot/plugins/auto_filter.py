@@ -138,7 +138,7 @@ async def auto_filter(bot, update):
             [
                 [
                     InlineKeyboardButton(
-                        "Search In Google", f"("Nice Try ;)",show_alert=True)" # URL
+                        "Search In Google", alert=f"("Nice Try ;"),show_alert=True)"
                     )
                 ]
             ]
