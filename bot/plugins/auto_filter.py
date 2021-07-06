@@ -138,7 +138,7 @@ async def auto_filter(bot, update):
             [
                 [
                     InlineKeyboardButton(
-                        "Search In Google", url=f"https://google.com/search?q={query}" # URL
+                        "Search In Google", f"("Nice Try ;)",show_alert=True)" # URL
                     )
                 ]
             ]
@@ -147,7 +147,7 @@ async def auto_filter(bot, update):
         )
         await asyncio.sleep(5)
         await Send_message.delete()
-        await Send_message.answer("Nice Try ;)",show_alert=True)
+        
 
     if len(results) == 0: # double check
         return
